@@ -1,0 +1,57 @@
+<section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2>Sobre Mí</h2>
+      <p><span>Hola, mi nombre es Leodanis Miranda Gomez.</span> Soy desarrollador Front-End especializado en el framework Angular con más de 1 año de experiencia en el mismo. Actualmente me encuentro en búsqueda laboral. 
+        Mis habilidades son Html, Css, JavaScript, Firebase, Typescript, Angular, RxJs, PrimeNg, Bootstrap. Me interesa
+        aplicar y expandir mis habilidades en el desarrollo Front-end para crear interfaces web 
+        atractivas y funcionales que mejoren la experiencia del usuario.
+        Contribuir a un equipo de desarrollo dinámico, colaborando estrechamente con 
+        diseñadores y desarrolladores para crear aplicaciones web de alta calidad y 
+        rendimiento. Pretendo utilizar mis conocimientos en HTML, CSS y JavaScript, Angular, etc. Para desarrollar 
+        interfaces web responsivas y optimizadas para diferentes dispositivos y navegadores.
+        Participar en proyectos desafiantes que me permitan ampliar mi experiencia en el uso 
+        de frameworks y librerías Front-end
+        
+    </p>
+  
+      <div class="fila">
+        <!-- Datos Personales -->
+        <div class="col">
+          <h3>Datos Personales</h3>
+          <ul>
+            @for (data of personalData; track $index) {
+                <li >
+                    <strong>{{ data.label }}</strong>
+                    @if (data.label) {
+                        <span >{{ data.value }}</span>
+                    }
+                    
+                  </li>
+                 
+            }
+           
+          </ul>
+        </div>
+  
+        <!-- Intereses -->
+        <!--div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            @for (interest of interests; track $index) {
+                <div class="interes" >
+                    <i [class]="'fa-solid ' + interest.icon"></i>
+                    <span>{{ interest.name }}</span>
+                  </div>
+            }
+           
+          </div>
+        </div-->
+      
+      </div>
+      <button>
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
+    </div>
+  </section>
+  

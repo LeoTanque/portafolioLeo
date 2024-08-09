@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+/* Eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Asegurar que html y body ocupen todo el ancho y alto */
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    //overflow-y: auto;
+  }
+  
+  /* Asegurar que las secciones ocupen todo el ancho */
+  section {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+
+  }
+
+
+  
+  
+  /* Opcional: Para alinear las secciones al centro de la pantalla */
+  
+  

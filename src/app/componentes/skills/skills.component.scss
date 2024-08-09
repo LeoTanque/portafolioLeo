@@ -1,0 +1,181 @@
+.skills {
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 10px;
+   // height: 100%;
+    font-family: 'Righteous';
+   
+  }
+  .skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    
+  }
+
+ 
+  .skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+  }
+  .skills .fila {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Cambia la dirección del flex a columna para centrar el contenido */
+    align-items: center; /* Alinea horizontalmente al centro */
+    //text-align: center;
+  }
+  .skills .fila .col {
+    width: 100%;
+    padding: 0 20px;
+    //text-align: center; 
+    
+    justify-content: center;
+  }
+  .skills .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+  }
+  .skills .skill > span {
+    //font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .skills .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido dentro de cada skill */
+}
+
+  .skills .skill .barra-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+
+  }
+  .skills .skill .progreso {
+    background-color: #1cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+  }
+  .skills .skill .barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+  }
+
+  .fila {
+    display: flex;
+    //flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .flex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+   justify-content: center;
+  }
+
+  
+
+
+
+
+
+
+
+  /* Media Query para pantallas medianas (tablets) */
+@media (max-width: 950px) {
+  .skills .flex {
+    grid-template-columns: 1fr; /* Una columna en lugar de dos */
+  }
+
+  .skills .skill .barra-skill {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  }
+
+  .skills .fila .col {
+    padding: 0 10px; /* Reduce el padding en columnas */
+  }
+
+  .skills .fila {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+  }
+
+  .skills h2 {
+    font-size: 36px; /* Reduce el tamaño del título principal */
+  }
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .skills .contenido-seccion {
+    padding: 20px; /* Reduce el padding para móviles */
+  }
+
+  .skills h2 {
+    font-size: 28px; /* Reduce el tamaño del título principal */
+  }
+
+  .skills .skill > span {
+    font-size: 16px; /* Ajusta el tamaño del texto en skills */
+  }
+
+  .skills .skill .barra-skill span {
+    height: 35px; /* Ajusta el tamaño del indicador de porcentaje */
+    width: 35px;
+    line-height: 35px;
+    top: -15px; /* Ajusta la posición del indicador de porcentaje */
+    right: -12px;
+    font-size: 12px;
+  }
+
+  .skills .skill .barra-skill {
+    height: 6px; /* Reduce la altura de la barra de progreso */
+  }
+
+  .skills .skill .progreso {
+    height: 6px; /* Reduce la altura de la barra de progreso */
+  }
+}
+
+/* Media Query para pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+  .skills h2 {
+    font-size: 24px; /* Tamaño de fuente más pequeño */
+  }
+
+  .skills .skill .barra-skill span {
+    height: 30px; /* Ajusta aún más el tamaño del indicador de porcentaje */
+    width: 30px;
+    line-height: 30px;
+    top: -13px;
+    right: -10px;
+    font-size: 10px;
+  }
+
+  .skills .skill .barra-skill {
+    width: 100%; /* Asegura que la barra ocupe todo el ancho en pantallas pequeñas */
+  }
+
+  .skills .fila .col {
+    padding: 0 5px; /* Menor padding en columnas */
+  }
+}
+
+
+

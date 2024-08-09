@@ -1,0 +1,43 @@
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+      <h2>Curriculum</h2>
+      <div class="educacion">
+       
+            <h3 class="text">Educación</h3>
+           
+              @for (item of education; track $index) {
+                  <div class="card">
+                    <h4 class="text">{{ item.title }}</h4>
+                    <span >{{ item.institution }}</span>
+                    <span class="fecha">{{ item.date }}</span>
+                    <div class="texto">
+                        <p class="">{{ item.description }}</p>
+                    </div>
+                  
+                    <div class="conectori">
+                      <div class="circuloi"></div>
+                    </div>
+                  </div>      
+              }
+      </div> 
+
+      <div class="col derecha">
+        <h3 class="text">Experiencia de trabajo</h3>
+        <div class="grid-container">
+            @for (item of experience; track $index) {
+                <div class="card">
+                    <h4>{{ item.title }}</h4>
+                    <span class="casa">{{ item.company }}</span>
+                    <span class="fecha">{{ item.date }}</span>
+                    <p>{{ item.description }}</p>
+                  </div>  
+            }
+         
+        </div>
+      </div>
+  
+
+
+    </div>
+  </section>
+  
