@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/portafolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -44,12 +44,11 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "10kb",
+                  "maximumError": "15kb"
                 }
               ],
-              "outputHashing": "all",
-              "baseHref": "/portafolioLeo/"
+              "outputHashing": "all"
             },
             "development": {
               "optimization": false,
